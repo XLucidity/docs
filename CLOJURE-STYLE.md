@@ -144,6 +144,12 @@ Make sure that the following options are checked:
 
 https://github.com/clojure-emacs/clojure-mode#vertical-alignment
 
+#### Vim users
+
+vim-easy-align may be used in blockwise visual mode to align maps:
+
+https://github.com/junegunn/vim-easy-align/issues/115
+
 ### Vectors
 
 Align horizontally, unless it becomes too long, then align vertically.
