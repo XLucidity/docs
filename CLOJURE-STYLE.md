@@ -197,3 +197,7 @@ Align horizontally, unless it becomes too long, then align vertically.
   (let [a 1]
     (println a)))
 ```
+
+## Loop-Recur
+
+Avoid using (loop (recur)) unless you have a really good reason for that. In most cases it's not idiomatic.
