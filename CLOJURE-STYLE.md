@@ -40,6 +40,20 @@ Always use destructuring where possible.
 
 ## Avoid nesting threading forms
 
+## Don't use threading for simple method calls
+
+; bad
+
+```Clojure
+(-> react/Keyboard (.addListener “keyboardDidShow” listener))
+```
+
+; good
+
+```Clojure
+(.addListener react/Keyboard “keyboardDidShow” listener)
+```
+
 ## Avoid using the #(%1) macro
 
 ## Avoid using (reduce) when possible
